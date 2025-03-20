@@ -5,14 +5,19 @@ requires = ["setuptools>=65.5.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hw_1"
+name = "python_homeworks"
 version = "0.1.0"
-description = "Simplified versions of nl, tail, wc utilities for hw1 are implemented."
+description = "Homework for the advanced Python course"
 dependencies = [
     "click >= 8.1.3",
 ]
+
+[tool.setuptools.packages.find]
+where = ["hw_1", "hw_2"]
+exclude = ["hw_1/artifacts", "hw_2/artifacts"]
 
 [project.scripts]
 simple_nl = "hw_1.simple_nl:simple_nl"
 simple_tail = "hw_1.simple_tail:simple_tail"
 simple_wc = "hw_1.simple_wc:simple_wc"
+main_tex = "hw_2.main_generator:main_tex"

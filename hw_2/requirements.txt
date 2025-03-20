@@ -1,0 +1,1 @@
+latex_images_and_tables_generator==0.1.0
