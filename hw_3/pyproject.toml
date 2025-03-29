@@ -1,0 +1,18 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hw_3"
+version = "0.1.0"
+dependencies = [
+    "numpy>=1.20.0"
+]
+
+[project.scripts]
+simple_matrix = "matrix_lib.task_1:generate_txt_file"
+
+[tool.setuptools.packages.find]
+where = ["."]
