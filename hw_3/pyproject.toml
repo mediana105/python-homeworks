@@ -1,5 +1,3 @@
-# pyproject.toml
-
 [build-system]
 requires = ["setuptools>=65.5.0", "wheel"]
 build-backend = "setuptools.build_meta"
@@ -12,7 +10,8 @@ dependencies = [
 ]
 
 [project.scripts]
-simple_matrix = "matrix_lib.task_1:generate_txt_file"
+main = "main:generate_artifacts"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
+include = ["*"]
