@@ -1,0 +1,3 @@
+Synchronous launch: 2.5509
+Thread launch: 2.4434
+Process launch: 0.5043
